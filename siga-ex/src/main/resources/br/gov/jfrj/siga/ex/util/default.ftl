@@ -1073,7 +1073,7 @@ LINHA  VARIÁVEL / CONTEÚDO
     			<label for="${var}" style="${negrito!};${vermelho!}">${titulo}</label>
     		[/#if]
     		
-       		<input type="text" id="${var}" name="${var}" value="${v}" ${jreler!""}${jrelertab!""} ${attsHtml} onkeyup="${onkeyup}" class="form-control" [#if isCpf]data-formatar-cpf="true" placeholder="000.000.000-00" maxlength="14" style="max-width: 150px"[#elseif isCnpj]data-formatar-cnpj="true" placeholder="00.000.000/000-00" maxlength="18" style="max-width: 180px"[#else]${jlargura!""}${jmaxcaracteres!""}[/#if]/>
+       		<input type="text" id="${var}" name="${var}" value="${v}" ${jreler!""}${jrelertab!""} ${attsHtml} onkeyup="${onkeyup}" class="form-control" [#if isCpf]data-formatar-cpf="true" placeholder="000.000.000-00" maxlength="14" style="max-width: 150px"[#elseif isCnpj]data-formatar-cnpj="true" placeholder="00.000.000/0000-00" maxlength="18" style="max-width: 180px"[#else]${jlargura!""}${jmaxcaracteres!""}[/#if]/>
        		<div class="invalid-feedback  invalid-feedback-${var}">Preenchimento obrigatório</div>	     	
 	     	[#if isCpf]    
 		     	<script>
